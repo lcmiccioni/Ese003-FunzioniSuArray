@@ -31,17 +31,41 @@ int main(int argc, char** argv) {
 }
 
 int massimo(int valori[], int dimensione){
-    // TODO Implementare il corpo della funzione
-    return 0;
+    int massimo,i;
+    
+    massimo = valori[0];
+    
+    for(i=0;i<dimensione;i++) {
+        if(valori[i]>massimo) {
+            massimo = valori[i];
+        }
+    }
+    
+    return massimo;
 }
 
 int minimo(int valori[], int dimensione){
-    // TODO Implementare il corpo della funzione
-    return 0;
+    int minimo,i;
+    
+    for(i=0;i<dimensione;i++) {
+        if(valori[i]<minimo) {
+            minimo = valori[i];
+        }
+    }
+    
+    return minimo;
 }
 
 float media(int valori[], int dimensione){
-    // TODO Implementare il corpo della funzione
-    return 0;
+    float media;
+    int i;
+    
+    for(i=0;i<dimensione;i++) {
+        media += valori[i];
+    }
+    
+    media /= dimensione;
+    
+    return media;
 }
 
